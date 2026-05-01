@@ -71,6 +71,11 @@ This will start a local Gradio server (usually at `http://localhost:7860`).
 3. **Input Caption (Hallucinated):** "A dog running on the grass with a frisbee in its mouth." -> *Verdict: 🚨 Hallucination Detected! (The word "frisbee" will be highlighted as suspicious).*
 4. **Adjust Threshold:** Tweak the cosine similarity threshold slider to see how detection sensitivity shifts.
 
+### 🎭 Mock Mode (UI Demo)
+To quickly test the UI without downloading the heavy ~1.5GB Hugging Face models, the repository includes a "Mock Mode" in `src/detector.py`. 
+- This instantly launches the frontend with fake data generation.
+- To restore full AI capabilities, simply revert `src/detector.py` to its original commit (which loads `openai/clip-vit-base-patch32` and `Salesforce/blip-image-captioning-base`).
+
 ## 🔮 Future Research Directions
 
 To extend this prototype into a full-scale research project, consider the following enhancements:

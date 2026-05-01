@@ -72,6 +72,9 @@ This will start a local Gradio server (usually at `http://localhost:7860`).
 4. **Adjust Threshold:** Tweak the cosine similarity threshold slider to see how detection sensitivity shifts.
 
 ### 🎭 Mock Mode (UI Demo)
+
+![UI Demo](<Screenshot 2026-05-01 at 7.35.47 PM.png>)
+
 To quickly test the UI without downloading the heavy ~1.5GB Hugging Face models, the repository includes a "Mock Mode" in `src/detector.py`. 
 - This instantly launches the frontend with fake data generation.
 - To restore full AI capabilities, simply revert `src/detector.py` to its original commit (which loads `openai/clip-vit-base-patch32` and `Salesforce/blip-image-captioning-base`).
